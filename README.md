@@ -92,5 +92,7 @@ However, this project can be expanded and more gesture and controls can be added
 ## References
 
 [Hand tracking module with FPS using OpenCV](https://medium.com/@Nivitus./hand-tracking-module-with-fps-using-opencv-4c9e8928a096)
-[Mediapipe: hand gesture-based volume controller in Python w/o GPU] (https://medium.com/analytics-vidhya/mediapipe-hand-gesture-based-volume-controller-in-python-w-o-gpu-67db1f30c6ed)
+
+[Mediapipe: hand gesture-based volume controller in Python w/o GPU](https://medium.com/analytics-vidhya/mediapipe-hand-gesture-based-volume-controller-in-python-w-o-gpu-67db1f30c6ed)
+
 [Murtaza's workshops](https://github.com/murtazahassan/OpenCV-Python-Tutorials-and-Projects)
