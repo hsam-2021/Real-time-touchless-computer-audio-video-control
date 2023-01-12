@@ -16,34 +16,49 @@ stations, music booth etc. and can be integrated with other applications as well
 
 • First, I set up the environment and installed all the required libraries and their correct 
   version because sometimes incompatible versions can give a hard time to debug the issue.
+  
 • After that I worked on the code to implement the above-mentioned functionality.
 • Created a module named HandTrackingGlobal which has all the methods related to hand 
   gestures defined.
+  
 • Then created another python file which implemented HandTrackingGlobal and access the 
   computer’s webcam using OpenCV library.
+  
 • As soon as the webcam starts capturing two windows open will open. One is the original 
   window and other is the cropped one. Also, the image is flipped to avoid the mirror 
   effect.
+  
 • The module mediapipe will capture hand if it is in the frame. Also, only 1 hand will be 
   captured and all the landmarks of the hands will be displayed in blue.
+  
 • Also, there will be a bounding box around the detected hand. The control will take effect 
   only when the bounding box in within that area range i.e., between 100 and 1000
+  
 • The area is being calculated using the width and height of the bounding box.
+
 • Additionally, the frame rate and number of fingers will be displayed as there are 
   functions written in the HandTrackingGlobal module which are used to do that.
+  
 • Once the webcam starts then if 5 fingers are shown then a browser tab will open and a 
   video will open up in YouTube. This is implemented using pyautogui library.
+  
 • Once the video is streaming then based on the hand gestures different video/audio 
   control action would be done.
+  
 • If all fingers are down then it will pause the video. Again, showing no fingers will play 
   the video.
+  
 • When index, middle and ring fingers are up then the video will forward.
+
 • When index, middle, ring and pinky fingers are up then the video will backward.
+
 • Volume can be increased and decreased using index and middle fingers. The distance 
   between then will be volume level as it is normalized to range 0-100 which is also shown 
   in the frame as the volume bar.
+  
 • After all the operation if the user wants to close, he/she can press “Esc” button to close 
   all the browser and webcam windows.
+  
 • Additionally, I have used a flag which will be disabled after the first time to avoid keep 
   opening new browser tabs every time 5 fingers are shown.
   
